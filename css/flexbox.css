@@ -1,0 +1,98 @@
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body{
+	background: #f2f2f2;
+	font-family: Arial;
+}
+
+.contenedor{
+	width: 80%;
+	max-width: 700px;
+	background: #212d40;
+	
+
+
+	/*Habilitar Flex Box: los elementos hijos se hacen flexibles, uno a lado del otro: float left
+	P R O P I E D A D E S : Padre
+	*/
+	display: flex;
+	/*Por defecto row*/
+	/*Esta propiedad se usa cuando hagamos un sitio adaptable, cambiando de row a column*/
+	flex-direction: row;
+	/*wrap por defecto y respeta los tamaños y los reordena automáticamente*/
+	flex-wrap: wrap;
+	/*Atajo para las propiedades
+	flex-flow: row wrap;
+	*/
+	/*Manipular el espaciado*/
+
+	/*Los arrastra a la derecha
+	space-betwen - reparte el espacio sobrante automaticamente
+	space-around
+	*/
+	justify-content: space-between;
+	
+	/*Acomodar verticalmente*/
+	height: 500px;
+	/*stretch - sin alto, ocupa todo el espacio verticalmente*/
+	/*
+	align-items: center;
+	Se usa una de las 2
+	
+	Cuando hay una más de una linea de elementos
+	*/
+	align-content:space-around;
+}
+
+
+.caja{
+	width: 100px;
+	height: 100px;
+	background: #f79256;
+	text-align: center;
+	margin: 20px;
+	padding: 20px;
+	font-size: 40px;
+	color:#FFF;
+
+ /*
+	Flex box
+ P R O P I E D A D E S :  H i j o */
+	/*order - Modifica el acomodo con otros elementos
+	
+	order:1;
+	*/
+
+	/*Proporción para hacer crecer un elemento respecto a los demás*/
+	flex-grow: 1;
+	/*El elemento se haga pequeño de a cuerdo a los demás*/
+	flex-shrink: 
+}
+
+/*.dos{
+	flex-shrink: 0;*/
+	/*
+	width: 200px;
+
+	ANCHO con FLEX
+	flex-basis: 200px;
+
+	||
+	||
+
+	flex: proporcion pequeño tam_auto;
+	*/
+/*.dos{*/
+	/*Con un tamaño definido*/
+	/*align-self: flex-start;
+	
+	align-self: stretch;
+	height: auto;*/
+
+/*}*/
