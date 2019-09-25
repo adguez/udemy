@@ -245,7 +245,7 @@ footer .redes-sociales a{
 	padding: 15px 0;
 	border-radius: 3px;
 	font-size: 30px;
-	background: #ccc;
+	/*background: #ccc;*/
 	margin:0 20px;
 }
 footer .redes-sociales .facebook:hover{
@@ -259,4 +259,27 @@ footer .redes-sociales .twitter:hover{
 }
 footer .redes-sociales .youtube:hover{
 	background:#ff0000;
+}
+
+
+/*----- ----- MEDIA QUERIES ----- -----*/
+@media screen and (max-width: 800px){
+	header .menu{
+		text-align: center;
+	}
+	.main .trabajos .contenedor-trabajos .trabajo{
+		width: 46%;
+	}
+}
+@media screen and (max-width: 500px){
+	header .contenedor-texto .texto .nombre{
+		font-size: 35px;
+	}
+	header .contenedor-texto .texto .profesion{
+		font-size: 18px;
+	}
+	footer .redes-sociales .contenedor{
+		flex-wrap: wrap;
+		padding: 20px 0;
+	}
 }
